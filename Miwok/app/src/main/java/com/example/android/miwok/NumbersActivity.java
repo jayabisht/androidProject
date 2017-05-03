@@ -45,6 +45,8 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
 
         am = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
 

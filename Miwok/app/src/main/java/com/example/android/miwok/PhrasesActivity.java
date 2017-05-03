@@ -46,6 +46,9 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+        // for up action
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         am = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
 
         // Create array for words
